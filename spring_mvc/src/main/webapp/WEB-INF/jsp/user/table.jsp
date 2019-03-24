@@ -20,9 +20,6 @@
     <script type="text/javascript" src="../../easyui/jquery.easyui.min.js"></script>
     <script type="text/javascript">
         function onSearch() {
-            var opts = $("#dg").datagrid("options");
-            opts.url = "./list";
-
             var userName = $("#userName").val();
             var note = $("#note").val();
             var params = {};

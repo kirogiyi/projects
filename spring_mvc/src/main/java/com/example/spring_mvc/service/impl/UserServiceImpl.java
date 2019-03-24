@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(isolation = Isolation.SERIALIZABLE, timeout = 1)
-    public User insertUser(User user) {
+    public int insertUser(User user) {
         return userDao.insertUser(user);
     }
 
